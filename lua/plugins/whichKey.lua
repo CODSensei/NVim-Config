@@ -43,12 +43,10 @@ return {
                 },
             },
             -- Ensure which-key does NOT activate in Visual Mode
-            triggers = "auto",
-            triggers_blacklist = {
-                n = {}, -- Normal mode (keep all triggers)
-                v = { "<leader>" }, -- Prevent which-key from triggering in Visual Mode
-                x = { "<leader>" }, -- Prevent in Visual Block Mode too
+            triggers = {
+                { "<leader>", mode = { "n", "v" } },
             },
+
       -- Document existing key chains
       spec = {
         { '<leader>/', group = 'Comments' },
