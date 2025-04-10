@@ -33,7 +33,7 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent right in visual mode" })
 vim.keymap.set("v", "<C-I>", "gg=G", { desc = "Indent right in visual mode" })
 
 -- Moving back a file
-vim.keymap.set("n","<leader>bb",vim.cmd.Ex)
+-- vim.keymap.set("n","<leader>bb",vim.cmd.Ex)
 
 -- Yank into system clipboard
 vim.keymap.set({'n', 'v'}, '<leader>y', '"+y') -- yank motion
