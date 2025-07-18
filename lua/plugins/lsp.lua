@@ -11,7 +11,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function() 
             require('mason-lspconfig').setup({
-                ensure_installed = { "lua_ls","bashls","clangd","tailwindcss","gopls","graphql","html","htmx","jdtls","ts_ls","jsonls","ast_grep","marksman","sqls","lemminx"}
+                ensure_installed = { "lua_ls","bashls","clangd","tailwindcss","gopls","graphql","html","htmx","ts_ls","jsonls","ast_grep","marksman","sqls","lemminx"}
             })
         end
     },
@@ -24,13 +24,6 @@ return {
                 ensure_installed = { "java-debug-adapter", "java-test" }
             })
         end
-    },
-    -- utility plugin for configuring the java language server for us
-    {
-        "mfussenegger/nvim-jdtls",
-        dependencies = {
-            "mfussenegger/nvim-dap",
-        }
     },
     {
         "neovim/nvim-lspconfig",
